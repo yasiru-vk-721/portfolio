@@ -1,13 +1,16 @@
 .navbar{
     height: 100px;
-    background-color: blueviolet;
+  
 
     .wrapper{
         max-width: 1366px;
         margin: auto;
+        margin-left: 200px;
+        margin-right: 200px;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        
         height: 100%;
 
         span{
@@ -20,5 +23,6 @@
             gap: 50px;
             font-size: 25px;
         }
+        
     }
 }
