@@ -17,12 +17,33 @@
             font-weight: bold;
             font-size: 3rem;
         }
-
-        .links{
+        .links {
             display: flex;
             gap: 50px;
-            font-size: 25px;
+            font-size: 20px;
         }
+        
+        .links a {
+            text-decoration: none; /* Remove default underline */
+            position: relative; /* Required for positioning the underline */
+        }
+        
+        .links a::after {
+            content: '';
+            position: absolute;
+            left: 0%; /* Position the underline in the middle */
+            bottom: -5px; /* Adjust this value to position the underline properly */
+            width: 0; /* Initially set width to 0 */
+            height: 2px; /* Height of the underline */
+            background-color: #ffffff; /* Color of the underline */
+            transition: width 0.3s ease; /* Add transition for smooth effect */
+        }
+        
+        .links a:hover::after {
+            width: 100%; /* Expand width to 100% on hover */
+            left: 0; /* Position the underline to start from the left */
+        }
+        
         
     }
 }

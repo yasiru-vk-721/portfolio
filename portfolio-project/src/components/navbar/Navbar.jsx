@@ -11,7 +11,6 @@ const Navbar = () => {
             <motion.span initial={{opacity:0, scale:1}} animate={{opacity:1, scale:1}} transition={{duration:1}}>Yasiru.</motion.span>
             <div className='links'>
                 <a href="#">Me</a>
-                <a href="#">Education</a>
                 <a href="#">Skills</a>
                 <a href="#">Projects</a>
                 <a href="#">Contact Me</a>

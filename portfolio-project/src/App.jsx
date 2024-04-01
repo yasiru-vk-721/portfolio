@@ -6,6 +6,7 @@ import Hero from './components/hero/Hero';
 import Parallax from './components/parallax/Parallax';
 
 const App = () => {
+  
   return <div>
     
       <section>
